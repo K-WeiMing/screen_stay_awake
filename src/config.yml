@@ -1,0 +1,8 @@
+config:
+  move_interval_start: 10
+  move_interval_end: 20
+  move_duration: 0.1
+  move_duration_edges: 0.1
+  keys: ['left', 'right']
+  key_press_interval_start: 0.5
+  key_press_interval_end: 3
