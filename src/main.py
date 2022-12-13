@@ -1,5 +1,3 @@
-from ast import Load
-from curses import KEY_NEXT
 import pyautogui
 import time
 import datetime
