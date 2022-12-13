@@ -1,5 +1,5 @@
-# windows_stay_awake
-This script is to to prevent windows from auto-locking the screen. This prevents your computer from going to sleep / locking the screen in the middle of a long-running task.
+# screen_stay_awake
+This script is to to prevent your computer from auto-locking the screen. This prevents your computer from going to sleep / locking the screen in the middle of a long-running task.
 
 # Requirements & Installation
 
