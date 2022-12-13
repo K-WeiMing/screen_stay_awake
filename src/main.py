@@ -1,17 +1,23 @@
-import pyautogui
+"""
+This python script utilises PyAutoGUI to prevent the display from going to sleep
+"""
 import time
 import datetime
 import random
+import pyautogui
 import yaml
 from yaml import SafeLoader
 
 START_TIME = datetime.datetime.now()
 
-with open("config.yml", "r") as ymlfile:
+with open("config.yml", "r", encoding="utf-8") as ymlfile:
     cfg = yaml.load(ymlfile, Loader=SafeLoader)
 
 
 def win_stay_awake():
+    """
+    Uses the config parameters to prevent display sleep
+    """
 
     while True:
         move_interval = random.randint(
@@ -23,7 +29,9 @@ def win_stay_awake():
         )
 
         print(
-            f"Time to next action: {START_TIME + datetime.timedelta(seconds= move_interval)}, key_interval: {key_interval}"
+            f"Time to next action: \
+            {START_TIME + datetime.timedelta(seconds= move_interval)}, \
+            key_interval: {key_interval}"
         )
         time.sleep(move_interval)
 
